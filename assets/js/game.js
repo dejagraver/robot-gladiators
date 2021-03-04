@@ -3,13 +3,29 @@ var playerHealth = 100;
 var playerAttack = 10;
 var playerMoney = 10;
 
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
+var enemyHealth = 50;
+var enemyAttack = 12;
+
 console.log(playerName);
 console.log(playerHealth, playerAttack, playerMoney);
 console.log("You can put regular sentences in these.");
 
-var enemyName = "Roborto";
+
+for(var i = 0; i < enemyNames.length; i++) {
+  console.log(enemyNames[i]);
+  console.log(i);
+  console.log(enemyName[i] + " is at " + i + " index");
+}
+enemyNames[0];
+var fight = function(enemyName) {
+  // fight function statements
+}
+
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
+
 
 // fight function
 var fight = function() {
@@ -66,6 +82,11 @@ var fight = function() {
     window.alert("You need to pick a valid option. Try again!");
   }
 };
+
+for(var i = 0; i < enemyNames.length; i++) {
+  fight(enemyNames[i]);
+}
+
 
 // run fight function to start game
 fight();
